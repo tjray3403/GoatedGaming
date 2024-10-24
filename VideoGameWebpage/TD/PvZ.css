@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+body {
+  background-color: #EDDEA8;
+}
+
+main {
+  background-color: #EDDEA8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.hero{
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url("zombie.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.5;
+
+}
+
+.hero h1{
+  font-family: 'Acme', sans-serif;
+  font-size: 60px;
+  color: #4d2475;
+-webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: black;
+}
+
+.hero h2{
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+  margin-top: 10%;
+  color: #0b9c06;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: black;
+  animation: Slide_In_Right_and_Zoom_In 2s ease;
+}
+
+.first-flower {
+  margin-left: 1%;
+  
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pic {
+  width: 33.33%;
+  padding: 0px;
+}
+
+.special-footer {
+  display: inline-block;
+  margin: 0 100px;
+}
+
+footer img {
+  max-width: 4%;
+}
+
+ .fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  }
+
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  transform: translate3d(-2000px, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+  } 

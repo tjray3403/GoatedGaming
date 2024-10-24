@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+      background-image: url(output-onlinepngtools.png);
+      background-color: #EDDEA8;
+      background-repeat: repeat ;
+      background-position: center left;
+      background-size: 250px ;
+      
+    }
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+   /* Set a small width */
+  background-color: lightgreen;
+  
+}
+
+.info{
+   animation: burnBabyBurn 0.4s linear infinite;
+    animation-name: transitionIn;
+    animation-duration: 4s;
+    transform: translate(0, 0);
+    animation-iteration-count: 1;
+}
+
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.main-h1 {
+  color:black;
+  margin-left: 20px;
+ /* font-style: "Verdana";*/
+  text-align: center;
+  border-style: solid ;
+  border-width: 0px 0px;
+  border-color: #54044B;
+  background-color: #EDDEA8;
+  width:35%;
+  box-shadow: 4px 4px 4px #000000;
+}
+h2{
+  color: black;
+  /*font-style: "Arial";*/
+  border-style: solid ;
+  border-width: 0px 0px;
+  border-color: #54044B;
+  background-color: #EDDEA8;
+  width:30%;
+  box-shadow: 4px 4px 4px #000000;
+}
+p {
+  border-style: solid ;
+  border-width: 0px 0px;
+  border-color: #54044B;
+  
+  width:80%;
+  text-align: center;
+  font-size: 16px;
+  
+}
+
+.para {
+  width: auto;
+  height: auto;
+  background-color: #EDDEA8;
+  color: #54044B;
+  box-shadow: 4px 4px 4px #000000;
+}
+
+@keyframes transitionIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

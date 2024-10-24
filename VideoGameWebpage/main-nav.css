@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+/* Header styles */
+header {
+  font-family: 'Raleway', sans-serif;
+	background-color: #4d2475;
+	color: #fff;
+	padding: 1em 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  font-family: 'Raleway', sans-serif;
+  background-color:#4d2475;
+  height: 100%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+nav ul li {
+  list-style: none;
+}
+
+ header img {
+  max-width: 4%;
+   border: none;
+  border-radius: 0;
+  margin: 0 30px;
+  background-color: none;
+}
+
+nav ul li a {
+  
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #000000 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: block;
+  padding: 1rem;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:before{
+  content: '';
+  background: #000000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+ background-position: 0;
+}
+
+nav ul li a:hover::before{
+  width: 100%;
+}
+
+/* Footer styles */
+footer {
+  font-family: 'Raleway', sans-serif;
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+footer p{
+	margin: 0;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+
+.text {
+  animation: Slide_In_Right_and_Zoom_In 2s ease;
+}

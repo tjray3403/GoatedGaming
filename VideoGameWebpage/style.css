@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+/* Body styles */
+body {
+  background-image: url(background.jpg);
+  background-color: rgba(245, 222, 179, 0.5);
+  background-size: 33%;
+  background-blend-mode: lighten;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+	color: #333;
+}
+
+
+/* Main styles */
+main {
+  width: 80%;
+	margin: 0 auto;
+	padding: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section {
+  font-family: Arial, sans-serif;
+	margin: 0 1em 4em;
+	flex: 25%;
+	background-color: #f2e9d9;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+  opacity: 0;
+}
+
+section:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+	margin-top: 0;
+	padding: 1em;
+	background-color: #4d2475;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+section p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding: 1em;
+}
+
+section img {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+section a {
+	background-color: #333;
+	color: #fff;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	display: block;
+	width: fit-content;
+	margin: 1em auto;
+}
+
+section a:hover {
+	background-color: #8a2be2;
+}
+
+#sandbox {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#fps {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#platform-fighters {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#tower-defence {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+#adventure {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#sports {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#rpg {
+  animation-name: transitionIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.filler {
+  visibility: hidden;
+}
+
+.welcome-text {
+  width: 100%;
+  display: inline;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+@keyframes transitionIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
